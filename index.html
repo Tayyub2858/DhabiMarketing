@@ -25,6 +25,22 @@
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .single-slider {
+            position: relative;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .single-slider {
+                 
+                 background-size: 100% 900px; 
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -180,9 +196,9 @@
         <!-- slider-area -->
         <section class="slider-area">
             <div class="slider-active">
-                <div class="single-slider slider-bg" data-background="assets/img/banner/mobile-banner-1.jpg">
-                    <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
-                        data-background="assets/img/banner/mobile-banner-1.jpg"></div>
+                <div class="single-slider" style="background-image: url('assets/img/banner/1.jpeg');">
+                    <!-- <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
+                        data-background="assets/img/banner/1.jpg"></div> -->
                     <!-- <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-8">
@@ -204,9 +220,9 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="single-slider slider-bg" data-background="assets/img/banner/mobile-banner-2.jpg">
-                    <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
-                        data-background="assets/img/banner/bnner2.jpg"></div>
+                <div class="single-slider" data-background="assets/img/banner/2.jpeg">
+                    <!-- <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
+                        data-background="assets/img/banner/bnner2.jpg"></div> -->
                     <!-- <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-8">
@@ -228,9 +244,9 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="single-slider slider-bg" data-background="assets/img/banner/mobile-banner-3.jpg">
-                    <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
-                        data-background="assets/img/banner/bnner2.jpg"></div>
+                <div class="single-slider" data-background="assets/img/banner/3.jpeg">
+                    <!-- <div class="slider-right-bg" data-animation="tgFadeInRight" data-delay=".8s"
+                        data-background="assets/img/banner/bnner2.jpg"></div> -->
                     <!-- <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-8">
@@ -396,14 +412,14 @@
 
                             </p>
 
-                            <!-- <a href="blog.html" class="btn transparent-btn">
+                            <a href="blog.html" class="btn transparent-btn">
                                 <div class="btn_m">
                                     <div class="btn_c">
                                         <div class="btn_t1">Explore all</div>
                                         <div class="btn_t2">Explore all</div>
                                     </div>
                                 </div>
-                            </a> -->
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -430,7 +446,7 @@
 
                         <div class="project-item">
                             <div class="project-thumb">
-                                <a href="project-details.html"><img src="assets/img/banner/privilege.jpg" alt=""></a>
+                                <a href="project-details.html"><img src="assets/img/banner/banner2.jpg" style="height: 600px;" alt=""></a>
                             </div>
                             <div class="project-content">
                                 <!-- <h3 class="title"><a href="project-details.html">Sadiq Plaza Blue Area Islamabad</a> -->
@@ -442,7 +458,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="section-title mb-50">
-                            <span class="sub-title">WELCOME TO OUR</span>
+                            <!-- <span class="sub-title">WELCOME TO OUR</span> -->
                             <h2 class="" style="color: #ab8c54; font-size: 50px; ">Seven Q – Location
                             </h2>
                             <p style="text-align: justify; padding-right:50px;color: black;">Seven Q, an LDA-approved
