@@ -2256,7 +2256,8 @@ label {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	background: var(--tg-primary-color);
+	/* background: var(--tg-primary-color); */
+	border: 3px solid #bd9a68;
 	z-index: -1;
 }
 .feature-icon::after {
