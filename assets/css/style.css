@@ -1766,7 +1766,7 @@ label {
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
 	.single-slider {
-		min-height: 30vh;
+		min-height: 20vh;
 		min-width: 10%;
 		/* padding: 100px 0; */
 		/* display: flex !important; */
