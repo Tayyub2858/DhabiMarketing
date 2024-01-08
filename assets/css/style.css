@@ -37,6 +37,7 @@
 28. Newsletter
 29. Contact
 30. Footer
+31. Whatsapp
 ============================
 */
 
@@ -1731,7 +1732,7 @@ label {
 	line-height: 1;
 	color: var(--tg-primary-color);
 	display: none;
-	margin-top: 0px;
+	margin-top: 15px;
 }
 
 /*=============================
@@ -1763,10 +1764,10 @@ label {
 	position: relative;
 }
 
-@media only screen and (min-width: 368px) and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
 	.single-slider {
 		min-height: 30vh;
-		width: 10%;
+		min-width: 10%;
 		/* padding: 100px 0; */
 		/* display: flex !important; */
 		/* align-items: center; */
@@ -4653,6 +4654,118 @@ label {
 	transform: scale(1, 0);
 	-webkit-animation: bar-left 3.2s linear 0s infinite;
 	animation: bar-left 3.2s linear 0s infinite;
+}
+.whatsapp-container {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    z-index: 80;
+    border-radius: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.whatsapp-avatar {
+    width: 56px; 
+    height: 56px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.floating-whatsapp {
+    text-align: center;
+    cursor: pointer;
+}
+.floating-whatsapp>.pro-step {
+    position: relative;
+    z-index: 1;
+}
+
+.floating-whatsapp>.pro-step {
+    display: inline-block;
+    /* height: 55px; */
+    /* width: 55px; */
+    /* line-height: 54px; */
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.floating-whatsapp .pro-step.green {
+    -webkit-animation: itg_pulse_green 1s infinite;
+    -o-animation: itg_pulse_green 1s infinite;
+    animation: itg_pulse_green 1s infinite;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 105, 152, 255);
+    box-shadow: 0 0 0 0 rgba(0, 105, 152, 255);
+}
+/* what'sapp green color  */
+@-webkit-keyframes itg_pulse_green {
+    0% {
+        -webkit-box-shadow: 0 0 0 5px rgba(5,194,32, 0.9);
+        box-shadow: 0 0 0 5px rgba(5,194,32, 0.9);
+    }
+
+    25% {
+        -webkit-box-shadow: 0 0 0 10px rgba(5,194,32, 0.6);
+        box-shadow: 0 0 0 10px rgba(5,194,32, 0.6);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(5,194,32, 0.3);
+        box-shadow: 0 0 0 15px rgba(5,194,32, 0.3);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(5,194,32, 0.1);
+        box-shadow: 0 0 0 20px rgba(5,194,32, 0.1);
+    }
+}
+
+@-o-keyframes itg_pulse_green {
+    0% {
+        box-shadow: 0 0 0 5px rgba(5,194,32, 0.9);
+    }
+
+    25% {
+        box-shadow: 0 0 0 10px rgba(5,194,32, 0.6);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(5,194,32, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(5,194,32, 0.1);
+    }
+}
+
+@keyframes itg_pulse_green {
+    0% {
+        -webkit-box-shadow: 0 0 0 5px rgba(5,194,32, 0.9);
+        box-shadow: 0 0 0 5px rgba(5,194,32, 0.9);
+    }
+
+    25% {
+        -webkit-box-shadow: 0 0 0 10px rgba(5,194,32, 0.6);
+        box-shadow: 0 0 0 10px rgba(5,194,32, 0.6);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(5,194,32, 0.3);
+        box-shadow: 0 0 0 15px rgba(5,194,32, 0.3);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(5,194,32, 0.1);
+        box-shadow: 0 0 0 20px rgba(5,194,32, 0.1);
+    }
 }
 
 @keyframes taRotation {
